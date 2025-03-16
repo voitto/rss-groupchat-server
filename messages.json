@@ -1,0 +1,14 @@
+[
+    {
+        "title": "heeey hello! testing",
+        "when": "2025-03-16T15:37:04.031Z",
+        "author": "nbb@example.com",
+        "groupchat": {
+            "group": {
+                "id": "group123",
+                "url": "http://localhost:3000/feed?key=userkey",
+                "title": "Social Web Chat Group"
+            }
+        }
+    }
+]

@@ -1,0 +1,12 @@
+37a38
+> var urlGroupChatNamespace = "https://rss.ag/rss-groupchat-extension/ns/1.0/";
+250c251
+< 	add ("<rss version=\"2.0\" xmlns:source=\"" + urlSourceNamespace + "\"" + contentNamespaceDecl + facebookNamespaceDecl + itunesNamespaceDecl + ">"); indentlevel++
+---
+> 	add ("<rss version=\"2.0\" xmlns:source=\"" + urlSourceNamespace + "\" xmlns:groupchat=\"" + urlGroupChatNamespace + "\"" + contentNamespaceDecl + facebookNamespaceDecl + itunesNamespaceDecl + ">"); indentlevel++
+368a370,374
+> 				// Add GroupChat group element if present
+> 				if (item.groupchat !== undefined && item.groupchat.group !== undefined) {
+> 					var group = item.groupchat.group;
+> 					add ("<groupchat:group id=\"" + encode(group.id) + "\" url=\"" + encode(group.url) + "\" title=\"" + encode(group.title) + "\" />");
+> 

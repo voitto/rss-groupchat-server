@@ -1,0 +1,21 @@
+{
+  "name": "rss-groupchat-server",
+  "version": "1.0.0",
+  "description": "Example RSS group chat server https://rss.ag/rss-groupchat-extension/",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "npx tsx index.ts"
+  },
+  "author": "Brian Hendrickson",
+  "license": "MIT",
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "daverss": "^0.6.10",
+    "davexmlrpc": "^0.4.26",
+    "hono": "^4.7.4",
+    "tsx": "^4.19.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10"
+  }
+}
